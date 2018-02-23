@@ -1,10 +1,10 @@
-let fib n = 
+let fibonacci n = 
     if n <= 2 then
         1
     else
-    let rec fib x y i = 
+    let rec fibonacci x y i = 
         if i < n then
-            fib y (x + y) (i + 1)
+            fibonacci y (x + y) (i + 1)
         else
             y
     fib 1 1 2
