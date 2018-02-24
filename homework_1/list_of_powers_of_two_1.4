@@ -1,4 +1,4 @@
-let power_of_two n = 
+let powerOfTwo n = 
     let rec power i acc =
         if i = n + 1 then
             acc
@@ -6,7 +6,7 @@ let power_of_two n =
             power (i + 1) (acc * 2)
     power 1 1
 
-let get_powers_of_two n m =
+let getPowersOfTwo n m =
     if n >=0 && m >= 0 then
         [for x in [0..m] -> power_of_two n * (power_of_two x)]
     else
