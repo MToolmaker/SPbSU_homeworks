@@ -1,10 +1,10 @@
 let invert ls =
     let length = List.length ls
-    let rec invert list inverted_list i =
+    let rec invert list invertedList i =
         if i = length then
-            inverted_list
+            invertedList
         else
-            invert (List.tail list) (List.head list :: inverted_list) (i + 1)
+            invert (List.tail list) (List.head list :: invertedList) (i + 1)
     invert ls [] 0
 
 let list_1 = [1; 2; 3]
