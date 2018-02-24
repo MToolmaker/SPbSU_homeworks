@@ -2,9 +2,9 @@ let firstOccurrence list n =
     let length = List.length list
     let rec firstOccurrence list i =
         if i = length then
-            -1
+            None
         else if List.head list = n then
-            i
+            Some(i)
         else
             firstOccurrence (List.tail list) (i + 1)
     firstOccurrence list 0
