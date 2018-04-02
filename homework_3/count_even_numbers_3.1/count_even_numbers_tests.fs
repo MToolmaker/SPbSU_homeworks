@@ -2,13 +2,13 @@ open NUnit.Framework
 [<TestFixture>]
 module ``countEvenNumbers tests`` =
     open countEvenNumbers
-    let emptyList: int list = []
+    
     let testData () =
         [ 
-            TestCaseData(emptyList).Returns(None)
-            TestCaseData([-2; 1; 2; 3; 5; 6]).Returns(Some(3))
-            TestCaseData([1..1000]).Returns(Some(500))
-            TestCaseData([-500..500]).Returns(Some(501))
+            TestCaseData([]).Returns(0)
+            TestCaseData([-2; 1; 2; 3; 5; 6]).Returns(3)
+            TestCaseData([1..1000]).Returns(500)
+            TestCaseData([-500..500]).Returns(501)
         ]
 
     [<TestCaseSource("testData")>]
