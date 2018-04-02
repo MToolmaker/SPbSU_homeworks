@@ -21,4 +21,4 @@ module ``countEvenNumbers tests`` =
 
     [<TestCaseSource("testData")>]
     let mapCountEvenNumbersTests list = 
-        filterCountEvenNumbers list
+        mapCountEvenNumbers list
