@@ -1,4 +1,4 @@
-module lambdaEvaluation
+﻿module LambdaEvaluation
     type Term =
         | Variable of string
         | Abstr of string * Term
@@ -7,7 +7,7 @@ module lambdaEvaluation
     let rec betaReduce (expr : Term) =
         let rec isNotAbstr (expr : Term) =
             match expr with
-            | Abstr(_,_) -> false
+            | Abstr(_, _) -> false
             | _ -> true
         and isNormalForm (expr : Term) =
             match expr with
@@ -17,7 +17,7 @@ module lambdaEvaluation
         and isNormalFormNotAbstr (expr : Term) =
             match expr with
             | Variable(_) -> true
-            | App(a,b) when (isNormalFormNotAbstr a && isNormalForm b) -> true
+            | App(a, b) when (isNormalFormNotAbstr a && isNormalForm b) -> true
             | _ -> false
 
         let renameBoundVarsAndSubstitute (boundVar : string) (abstrBody : Term) (term : Term) =
@@ -68,11 +68,12 @@ module lambdaEvaluation
 
             //После переименования, можно подставлять выражение term зная, что свободные переменные term имеют отличные названия от связанных в abstrBody
             substitute boundVar (renameBoundVars abstrBody term) term
-
-        //Ссылаясь ну курс Дениса Москвина, выполняется ровно одно из следующих правил бета редукции по нормальной стратегии, поэтому данный match обрабатывает всевозможные случаи.
-        match expr with
-        | _ when isNormalForm expr -> expr
-        | Abstr(a, b) -> Abstr(a, betaReduce b)
-        | App(a, b) when isNotAbstr a -> betaReduce (App(betaReduce a,b))     
-        | App(a, b) when isNormalFormNotAbstr a -> betaReduce (App(a, betaReduce b))
-        | App(Abstr(boundVar, abstrBody), term) -> betaReduce (renameBoundVarsAndSubstitute boundVar abstrBody term)
+        
+        if isNormalForm expr then expr
+        else
+            //Ссылаясь ну курс Дениса Москвина, выполняется ровно одно из следующих правил бета редукции по нормальной стратегии, поэтому данный match обрабатывает всевозможные случаи.
+            match expr with
+            | Abstr(a, b) -> Abstr(a, betaReduce b)
+            | App(a, b) when isNotAbstr a -> betaReduce (App(betaReduce a,b))     
+            | App(a, b) when isNormalFormNotAbstr a -> betaReduce (App(a, betaReduce b))
+            | App(Abstr(boundVar, abstrBody), term) -> betaReduce (renameBoundVarsAndSubstitute boundVar abstrBody term)
