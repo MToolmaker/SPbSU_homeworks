@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "expression_evaluation_3.3",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "sequence_of_prime_numbers_3.4", "sequence_of_prime_numbers_3.4\sequence_of_prime_numbers_3.4.fsproj", "{9207936A-DD47-4C63-BF64-7664BBADE55A}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "count_even_numbers_3.1_tests", "count_even_numbers_3.1_tests\count_even_numbers_3.1_tests.fsproj", "{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9207936A-DD47-4C63-BF64-7664BBADE55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9207936A-DD47-4C63-BF64-7664BBADE55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9207936A-DD47-4C63-BF64-7664BBADE55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
