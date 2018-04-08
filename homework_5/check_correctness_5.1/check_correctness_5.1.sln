@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "check_correctness_5.1", "check_correctness_5.1\check_correctness_5.1.fsproj", "{04BE7477-8550-4BD7-A8C1-9FF5AACC1402}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "check_correctness_5.1_tests", "check_correctness_5.1_tests\check_correctness_5.1_tests.fsproj", "{16FC636F-B2EC-4A39-829A-A3AD8327C490}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{04BE7477-8550-4BD7-A8C1-9FF5AACC1402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04BE7477-8550-4BD7-A8C1-9FF5AACC1402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04BE7477-8550-4BD7-A8C1-9FF5AACC1402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16FC636F-B2EC-4A39-829A-A3AD8327C490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16FC636F-B2EC-4A39-829A-A3AD8327C490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16FC636F-B2EC-4A39-829A-A3AD8327C490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16FC636F-B2EC-4A39-829A-A3AD8327C490}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
