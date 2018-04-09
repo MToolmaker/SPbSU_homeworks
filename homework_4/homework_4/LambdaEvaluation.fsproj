@@ -14,7 +14,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
-    <Name>lambda_evaluation_4.3</Name>
+    <Name>LambdaEvaluation</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,8 +61,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
-    <Compile Include="lambdaEvaluation.fs" />
-    <Compile Include="lambdaEvaluationTests.fs" />
+    <Compile Include="LambdaEvaluation.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
