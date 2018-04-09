@@ -10,7 +10,7 @@
     [<Test>]
     let ``"()" must be correct`` () =
         braceChecker "()" |> should equal true
-
+    
     [<Test>]
     let ``"[]" must be correct`` () =
         braceChecker "[]" |> should equal true
@@ -89,5 +89,5 @@
 
     [<Test>]
     let ``"{}{}{}{()}" must be correct`` () =
-        braceChecker "{(a)a(a)a(a)a(a)a(a){sdf}{[a]()fsdf}{ss}{}{a[][]}}" |> should equal true 
+        braceChecker "{(a)a(a)a(a)a(a)a(a){sdf}{[a]()fsdf}{ss}{}{a[][]}}" |> should equal true
     
