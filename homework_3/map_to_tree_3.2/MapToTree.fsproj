@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>9207936a-dd47-4c63-bf64-7664bbade55a</ProjectGuid>
+    <ProjectGuid>46b2209e-ee67-4437-95c4-6a0f9740ff0b</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>sequence_of_prime_numbers_3._4</RootNamespace>
-    <AssemblyName>sequence_of_prime_numbers_3._4</AssemblyName>
+    <RootNamespace>map_to_tree_3._2</RootNamespace>
+    <AssemblyName>map_to_tree_3._2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
-    <Name>sequence_of_prime_numbers_3.4</Name>
+    <Name>MapToTree</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,8 +61,8 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
-    <Compile Include="sequenceGenerator.fs" />
-    <Compile Include="sequenceGeneratorTests.fs" />
+    <Compile Include="MapToTree.fs" />
+    <Compile Include="MapToTreeTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">

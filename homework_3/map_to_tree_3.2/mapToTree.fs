@@ -1,4 +1,4 @@
-﻿module mapToTree
+﻿module MapToTree
     type Tree<'a> = 
     | Empty
     | Tree of 'a * Tree<'a> * Tree<'a>

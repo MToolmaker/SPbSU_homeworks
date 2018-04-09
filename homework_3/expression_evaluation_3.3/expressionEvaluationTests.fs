@@ -1,7 +1,7 @@
-﻿module expressionEvaluationTests
+﻿module ExpressionEvaluationTests
     open NUnit.Framework
     open FsUnit
-    open expressionEvaluation
+    open ExpressionEvaluation
 
     [<Test>]
     let ``15 must be 15`` () =

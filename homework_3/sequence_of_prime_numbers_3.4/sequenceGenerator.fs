@@ -1,4 +1,4 @@
-﻿module sequenceGenerator
+﻿module SequenceGenerator
     let createSequence() = 
         let isPrimeNumber n =
             let k = float n |> sqrt |> int

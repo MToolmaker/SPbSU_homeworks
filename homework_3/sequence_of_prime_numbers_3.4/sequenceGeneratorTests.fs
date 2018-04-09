@@ -1,7 +1,7 @@
 ﻿module sequenceGeneratorTests
     open NUnit.Framework
     open FsUnit
-    open sequenceGenerator
+    open SequenceGenerator
     [<Test>]
     let ``First element of sequence transformed to list must be [2]`` () =
         Seq.toList(Seq.take 1 (createSequence())) |> should equal [2]

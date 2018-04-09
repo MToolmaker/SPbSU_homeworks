@@ -1,7 +1,7 @@
 ﻿open NUnit.Framework
 [<TestFixture>]
-module ``countEvenNumbers tests`` =
-    open countEvenNumbers
+module CountEvenNumbersTests =
+    open CountEvenNumbers
     
     let testData () =
         [ 

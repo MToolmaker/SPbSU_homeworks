@@ -1,7 +1,7 @@
-﻿module ``Map to tree tests`` =
+﻿module MapToTreeTests =
     open NUnit.Framework
     open FsUnit
-    open mapToTree
+    open MapToTree
 
     [<Test>]
     let ``map Tree.Empty must be Tree.Empty`` () =

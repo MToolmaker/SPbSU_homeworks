@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "count_even_numbers_3.1", "count_even_numbers_3.1\count_even_numbers_3.1.fsproj", "{647E4748-9C49-465A-9D8B-2726EDAA7A6E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountEvenNumbers", "count_even_numbers_3.1\CountEvenNumbers.fsproj", "{647E4748-9C49-465A-9D8B-2726EDAA7A6E}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "map_to_tree_3.2", "map_to_tree_3.2\map_to_tree_3.2.fsproj", "{46B2209E-EE67-4437-95C4-6A0F9740FF0B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MapToTree", "map_to_tree_3.2\MapToTree.fsproj", "{46B2209E-EE67-4437-95C4-6A0F9740FF0B}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "expression_evaluation_3.3", "expression_evaluation_3.3\expression_evaluation_3.3.fsproj", "{81B11ED6-A7D9-48E5-8C53-6570A290F987}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExpressionEvaluation", "expression_evaluation_3.3\ExpressionEvaluation.fsproj", "{81B11ED6-A7D9-48E5-8C53-6570A290F987}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "sequence_of_prime_numbers_3.4", "sequence_of_prime_numbers_3.4\sequence_of_prime_numbers_3.4.fsproj", "{9207936A-DD47-4C63-BF64-7664BBADE55A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PrimeNumbersSequence", "sequence_of_prime_numbers_3.4\PrimeNumbersSequence.fsproj", "{9207936A-DD47-4C63-BF64-7664BBADE55A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "count_even_numbers_3.1_tests", "count_even_numbers_3.1_tests\count_even_numbers_3.1_tests.fsproj", "{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CountEvenNumbersTests", "count_even_numbers_3.1_tests\CountEvenNumbersTests.fsproj", "{A8DF461F-81F1-491C-9FD1-9D3F0C4462D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
