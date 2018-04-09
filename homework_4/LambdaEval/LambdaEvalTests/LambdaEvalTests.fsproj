@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>55fa0da0-a903-4ad2-bebc-a6143b6a9f88</ProjectGuid>
+    <ProjectGuid>5dcf0524-b47f-4709-bb2a-bda643ba3afa</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>homework_4</RootNamespace>
-    <AssemblyName>homework_4</AssemblyName>
+    <RootNamespace>LambdaEvalTests</RootNamespace>
+    <AssemblyName>LambdaEvalTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
-    <Name>LambdaEvaluation</Name>
+    <Name>LambdaEvalTests</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,7 +61,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
-    <Compile Include="LambdaEvaluation.fs" />
+    <Compile Include="LambdaEvalTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
@@ -81,6 +81,13 @@
       <HintPath>..\packages\System.ValueTuple.4.3.1\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LambdaEval\LambdaEval.fsproj">
+      <Name>LambdaEval</Name>
+      <Project>{05753442-4849-4306-a738-0e9f07c65bbc}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

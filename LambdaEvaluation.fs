@@ -77,3 +77,5 @@
             | App(a, b) when isNotAbstr a -> betaReduce (App(betaReduce a,b))     
             | App(a, b) when isNormalFormNotAbstr a -> betaReduce (App(a, betaReduce b))
             | App(Abstr(boundVar, abstrBody), term) -> betaReduce (renameBoundVarsAndSubstitute boundVar abstrBody term)
+
+

@@ -1,4 +1,4 @@
-﻿namespace homework_4.AssemblyInfo
+﻿namespace LambdaEval.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("homework_4")>]
+[<assembly: AssemblyTitle("LambdaEval")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("homework_4")>]
+[<assembly: AssemblyProduct("LambdaEval")>]
 [<assembly: AssemblyCopyright("Copyright ©  2018")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("55fa0da0-a903-4ad2-bebc-a6143b6a9f88")>]
+[<assembly: Guid("05753442-4849-4306-a738-0e9f07c65bbc")>]
 
 // Version information for an assembly consists of the following four values:
 // 

@@ -1,4 +1,4 @@
-﻿namespace LambdaEvaluationTests.AssemblyInfo
+﻿namespace LambdaEvalTests.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("LambdaEvaluationTests")>]
+[<assembly: AssemblyTitle("LambdaEvalTests")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("LambdaEvaluationTests")>]
+[<assembly: AssemblyProduct("LambdaEvalTests")>]
 [<assembly: AssemblyCopyright("Copyright ©  2018")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("16bdaab9-cde1-4d3d-8c06-234c7e6f5664")>]
+[<assembly: Guid("5dcf0524-b47f-4709-bb2a-bda643ba3afa")>]
 
 // Version information for an assembly consists of the following four values:
 // 

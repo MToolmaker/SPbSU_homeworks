@@ -1,4 +1,4 @@
-﻿module LambdaEvaluationTests'
+﻿module LambdaEvaluationTests
     open NUnit.Framework
     open FsUnit
     open LambdaEvaluation

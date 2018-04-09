@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>16bdaab9-cde1-4d3d-8c06-234c7e6f5664</ProjectGuid>
+    <ProjectGuid>81b11ed6-a7d9-48e5-8c53-6570a290f987</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LambdaEvaluationTests</RootNamespace>
-    <AssemblyName>LambdaEvaluationTests</AssemblyName>
+    <RootNamespace>expression_evaluation_3._3</RootNamespace>
+    <AssemblyName>expression_evaluation_3._3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
-    <Name>LambdaEvaluationTests</Name>
+    <Name>ExpressionEvaluation</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,7 +61,8 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
-    <Compile Include="LambdaEvaluationTests.fs" />
+    <Compile Include="ExpressionEvaluation.fs" />
+    <Compile Include="ExpressionEvaluationTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
@@ -81,13 +82,6 @@
       <HintPath>..\packages\System.ValueTuple.4.3.1\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
       <Private>True</Private>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\homework_4\LambdaEvaluation.fsproj">
-      <Name>LambdaEvaluation</Name>
-      <Project>{55fa0da0-a903-4ad2-bebc-a6143b6a9f88}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
