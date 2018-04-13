@@ -83,7 +83,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\count_even_numbers_3.1\CountEvenNumbers.fsproj">
+    <ProjectReference Include="..\CountEvenNumbers\CountEvenNumbers.fsproj">
       <Name>CountEvenNumbers</Name>
       <Project>{647e4748-9c49-465a-9d8b-2726edaa7a6e}</Project>
       <Private>True</Private>
