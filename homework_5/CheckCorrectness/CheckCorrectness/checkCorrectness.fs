@@ -1,4 +1,4 @@
-﻿module checkCorrectness
+﻿module CheckCorrectness
 
     type Direction =
         | Forward

@@ -1,7 +1,7 @@
-﻿module pointFreeTaskTests
+﻿module PointFreeTaskTests
     open NUnit.Framework
     open FsCheck
-    open pointFreeTask
+    open PointFreeTask
 
     [<Test>]
     let ``Equality: func'0 and func'1`` () =
@@ -18,4 +18,3 @@
     [<Test>]
     let ``Equality: func'3 and func'0`` () =
         Check.Quick (fun x l -> (func'3 x l = func'0 x l))
-

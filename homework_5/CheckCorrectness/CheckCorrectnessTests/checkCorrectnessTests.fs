@@ -1,7 +1,7 @@
 ﻿module checkCorrectnessTests
     open NUnit.Framework
     open FsUnit
-    open checkCorrectness
+    open CheckCorrectness
 
     [<Test>]
     let ``"" must be correct`` () =

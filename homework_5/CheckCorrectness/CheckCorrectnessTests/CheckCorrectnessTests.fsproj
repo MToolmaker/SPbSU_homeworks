@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>04be7477-8550-4bd7-a8c1-9ff5aacc1402</ProjectGuid>
+    <ProjectGuid>16fc636f-b2ec-4a39-829a-a3ad8327c490</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>check_correctness_5._1</RootNamespace>
-    <AssemblyName>check_correctness_5._1</AssemblyName>
+    <RootNamespace>check_correctness_5._1_tests</RootNamespace>
+    <AssemblyName>CheckCorrectnessTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
-    <Name>CheckCorrectness</Name>
+    <Name>CheckCorrectnessTests</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -61,7 +61,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
-    <Compile Include="checkCorrectness.fs" />
+    <Compile Include="checkCorrectnessTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
@@ -81,6 +81,13 @@
       <HintPath>..\packages\System.ValueTuple.4.3.1\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CheckCorrectness\CheckCorrectness.fsproj">
+      <Name>CheckCorrectness</Name>
+      <Project>{04be7477-8550-4bd7-a8c1-9ff5aacc1402}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,4 +1,4 @@
-﻿namespace point_free_task_5._2.AssemblyInfo
+﻿namespace PointFreeTests.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("point_free_task_5.2")>]
+[<assembly: AssemblyTitle("PointFreeTests")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("")>]
-[<assembly: AssemblyProduct("point_free_task_5.2")>]
+[<assembly: AssemblyProduct("PointFreeTests")>]
 [<assembly: AssemblyCopyright("Copyright ©  2018")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
@@ -22,7 +22,7 @@ open System.Runtime.InteropServices
 [<assembly: ComVisible(false)>]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[<assembly: Guid("5cdf3999-399d-4790-9261-b49d990e4eda")>]
+[<assembly: Guid("0af011c3-c28b-4670-a521-1c46e5f94ce7")>]
 
 // Version information for an assembly consists of the following four values:
 // 
