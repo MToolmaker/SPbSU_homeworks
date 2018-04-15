@@ -32,7 +32,6 @@
         formatter.Serialize(outputStream, phonebook)
 
     let runInteractiveMode (phonebook : Phonebook) =
-        let t = Char.TryParse("d")
         printfn "Welcome. It's phonebook interactive."
         let rec handleCommand phonebook =
             printfn "Enter command: (h - help)"
