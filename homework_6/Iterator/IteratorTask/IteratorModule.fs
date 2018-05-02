@@ -17,14 +17,14 @@
             | Empty -> []
             | Node((_, value), left, right) -> (linearize left) @ [value] @ (linearize right)
         
-        let values = linearize tree
+        let mutable values = linearize tree
         let mutable position = -1
         let length = List.length values
 
         interface IEnumerator<'value> with
             member this.Current: 'value =
                 if position < length then
-                    List.item position values
+                    List.head values
                 else
                     raise <| System.InvalidOperationException()
 
@@ -34,10 +34,15 @@
 
             member __.MoveNext(): bool =
                 position <- position + 1
+
+                if position <> 0 && position < length then
+                    values <- List.tail values
+                
                 position < length
 
             member __.Reset(): unit =
                 position <- -1
+                values <- linearize tree
 
 
     let isBinarySearchTree (tree : Tree<'key, 'value>) =
