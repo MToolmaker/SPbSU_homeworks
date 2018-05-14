@@ -2,7 +2,7 @@
     type Hashtable<'TKey, 'TValue when 'TValue : equality>(size : int, getHash : 'TKey -> int) =
         let mutable array : 'TValue list [] = Array.zeroCreate size
         do for i in 0 .. size-1 do array.[i] <- []
-            
+        
         member __.Add(key : 'TKey) (value : 'TValue) =
             let index = (getHash key) % size |> abs
             let list = array.[index]
