@@ -75,30 +75,27 @@
                      handleCommand (newRecord :: phonebook)
             
             | 'r' -> printfn "Reading records."
-                     let inputPath = Console.ReadLine()
-                     if not (File.Exists(inputPath)) then
-                        printfn "Records with given path don't exist."
+                     printfn "Enter phonebook name:"
+                     let name = Console.ReadLine()
+                     if not (File.Exists(name)) then
+                        printfn "Records with given name don't exist."
                         handleCommand phonebook
                      else
-                        let fsIn = new FileStream(inputPath, FileMode.Open)
+                        use fsIn = new FileStream(name, FileMode.Open)
                         let newPhonebook = readRecords fsIn
                         printfn "Phonebook was succesfully read."
                         handleCommand newPhonebook
             
             | 't' -> printfn "Saving records."
-                     printfn "Enter directory path to save records:"
-                     let outDir = Console.ReadLine()
-                     if not (Directory.Exists(outDir)) then
-                        printfn "Given directory doesn't exist."
+                     printfn "Enter new phonebook name:"
+                     let name = Console.ReadLine()
+                     if not (File.Exists(name)) then
+                         use fsOut = new FileStream(name, FileMode.Create)
+                         saveRecords fsOut phonebook
+                         printfn "New phonebook has been succesfully saved."
                      else
-                        printfn "Enter new phonebook name:"
-                        let name = Console.ReadLine()
-                        if not (File.Exists(outDir + name)) then
-                            let fsOut = new FileStream(outDir + name, FileMode.Create)
-                            printfn "New phonebook has been succesfully saved."
-                            saveRecords fsOut phonebook
-                        else
-                            printfn "File with given name is already exist."
+                         printfn "File with given name is already exist."
+                     
                      handleCommand phonebook
 
             | 'y' -> printfn "Goodbye."

@@ -70,11 +70,5 @@
         saveRecords fsOut phonebook
         fsOut.Close()
 
-        let fsIn = new FileStream("testPhonebook1", FileMode.Open)
+        use fsIn = new FileStream("testPhonebook1", FileMode.Open)
         readRecords fsIn |> should equal phonebook
-        fsIn.Close()
-
-
-        
-    
-
