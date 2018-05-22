@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LambdaEval", "LambdaEval\LambdaEval.fsproj", "{05753442-4849-4306-A738-0E9F07C65BBC}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LambdaEvalTests", "LambdaEvalTests\LambdaEvalTests.fsproj", "{5DCF0524-B47F-4709-BB2A-BDA643BA3AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05753442-4849-4306-A738-0E9F07C65BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05753442-4849-4306-A738-0E9F07C65BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05753442-4849-4306-A738-0E9F07C65BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05753442-4849-4306-A738-0E9F07C65BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCF0524-B47F-4709-BB2A-BDA643BA3AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCF0524-B47F-4709-BB2A-BDA643BA3AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCF0524-B47F-4709-BB2A-BDA643BA3AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCF0524-B47F-4709-BB2A-BDA643BA3AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39E63D10-D08D-490C-8996-9D46D8809E1D}
+	EndGlobalSection
+EndGlobal
