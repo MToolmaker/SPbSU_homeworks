@@ -1,7 +1,7 @@
 ﻿module Rounding
     open System
 
-    let (/) a b = if b = 0.0 then None else Some(a/b)
+    let (/) a b = if b = 0.0 then None else Some(a / b)
 
     type MaybeRoundingBuilder(precision : int) =
         do if precision <= 0 then raise <| System.ArgumentException("Precision can't be " + string precision)
