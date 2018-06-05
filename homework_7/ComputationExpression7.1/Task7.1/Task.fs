@@ -9,8 +9,8 @@
             match x with
             | None -> x
             | Some a ->
-                Math.Round(a,precision) |> f
+                Math.Round(a, precision) |> f
         
-        member this.Return(x : float) = Math.Round(x,precision) |> Some
+        member this.Return(x : float) = Math.Round(x, precision) |> Some
 
     let rounding precision = new MaybeRoundingBuilder(precision)
